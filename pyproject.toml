@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "k8s-timeline"
+version = "0.1.0"
+description = "Reconstruct Kubernetes incident timelines from cluster state. Stdlib-only, zero dependencies."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Shiva Sampathi" }]
+keywords = ["kubernetes", "sre", "incident", "timeline", "observability", "postmortem"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Repository = "https://github.com/agentbantu-wq/k8s-timeline"
+
+[project.scripts]
+k8s-timeline = "k8s_timeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
