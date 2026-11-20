@@ -1,0 +1,21 @@
+# Rename to CITATION.cff and commit at the repo root of k8s-timeline
+cff-version: 1.2.0
+title: k8s-timeline
+version: 0.1.0
+date-released: 2026-10-14
+authors:
+  - family-names: Sampathi
+    given-names: Shiva
+repository-code: https://github.com/agentbantu-wq/k8s-timeline
+license: MIT
+abstract: >-
+  Reconstruct a Kubernetes incident timeline straight from cluster state —
+  events, pod/container signals, rollout activity, and node conditions
+  into one unified chronological timeline. Stdlib-only Python, zero
+  dependencies; emits postmortem-copilot-compatible JSON via --pmc.
+keywords:
+  - kubernetes
+  - incident-response
+  - site-reliability-engineering
+  - observability
+  - timeline
